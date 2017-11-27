@@ -1,0 +1,27 @@
+uuid: 82376187-a5e0-4a10-97b7-2826b4e08572
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_eday_start_meridiem
+field_name: field_eday_start_meridiem
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: a.m.
+      label: a.m.
+    -
+      value: p.m.
+      label: p.m.
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

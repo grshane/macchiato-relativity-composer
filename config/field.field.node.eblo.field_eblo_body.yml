@@ -1,0 +1,21 @@
+uuid: f3c4ed1a-0608-4093-96ce-e8912a799d5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eblo_body
+    - node.type.eblo
+  module:
+    - text
+id: node.eblo.field_eblo_body
+field_name: field_eblo_body
+entity_type: node
+bundle: eblo
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

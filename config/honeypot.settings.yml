@@ -1,0 +1,37 @@
+unprotected_forms:
+  - user_login_form
+  - search_form
+  - search_block_form
+  - views_exposed_form
+  - honeypot_settings_form
+protect_all_forms: false
+log: false
+element_name: url
+time_limit: 5
+expire: 300
+form_settings:
+  user_register_form: false
+  user_pass: false
+  contact_message_feedback_form: false
+  contact_message_personal_form: false
+  node_atte_form: false
+  node_docu_form: false
+  node_eblo_form: false
+  node_eday_form: false
+  node_espo_form: false
+  node_even_form: false
+  node_fspe_form: false
+  node_fspr_form: false
+  node_hero_form: false
+  node_igal_form: false
+  node_orga_form: false
+  node_sess_form: false
+  node_sitm_form: false
+  node_spag_form: false
+  node_spon_form: false
+  node_tslo_form: false
+  node_venu_form: false
+  node_vroo_form: false
+  node_webform_form: true
+_core:
+  default_config_hash: 9bVDfWSa_In6VzTXmy04jJ_3ZQobihKjO9isuuUCPaw

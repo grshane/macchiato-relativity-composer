@@ -1,0 +1,20 @@
+uuid: c9ab2dfb-abf6-43b8-82e4-0f91275823bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_espo_sponsor_level_ref
+field_name: field_espo_sponsor_level_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

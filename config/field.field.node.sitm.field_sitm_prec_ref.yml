@@ -1,0 +1,28 @@
+uuid: b8fc0235-2fd0-4bfd-a9f1-fe30e0e73313
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sitm_prec_ref
+    - node.type.prec
+    - node.type.sitm
+id: node.sitm.field_sitm_prec_ref
+field_name: field_sitm_prec_ref
+entity_type: node
+bundle: sitm
+label: Presenter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      prec: prec
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

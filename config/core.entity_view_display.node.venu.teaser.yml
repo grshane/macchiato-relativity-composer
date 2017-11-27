@@ -1,0 +1,18 @@
+uuid: 80fc507e-e326-411f-bb58-b0a015f3650c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.venu
+  module:
+    - user
+id: node.venu.teaser
+targetEntityType: node
+bundle: venu
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

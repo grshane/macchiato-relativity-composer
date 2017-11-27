@@ -1,0 +1,18 @@
+uuid: 297f6921-5609-4eb2-bb16-b7323386607d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.sess
+  module:
+    - user
+id: node.sess.teaser
+targetEntityType: node
+bundle: sess
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

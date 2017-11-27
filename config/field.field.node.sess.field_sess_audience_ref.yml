@@ -1,0 +1,29 @@
+uuid: c30b99e9-a482-4a49-a866-f102d1dd03f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sess_audience_ref
+    - node.type.sess
+    - taxonomy.vocabulary.audience
+id: node.sess.field_sess_audience_ref
+field_name: field_sess_audience_ref
+entity_type: node
+bundle: sess
+label: Audience
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      audience: audience
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

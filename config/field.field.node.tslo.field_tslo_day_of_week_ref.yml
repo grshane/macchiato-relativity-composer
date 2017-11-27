@@ -1,0 +1,29 @@
+uuid: bf19284a-702b-4073-b78f-8d660061cb60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tslo_day_of_week_ref
+    - node.type.tslo
+    - taxonomy.vocabulary.day_of_week
+id: node.tslo.field_tslo_day_of_week_ref
+field_name: field_tslo_day_of_week_ref
+entity_type: node
+bundle: tslo
+label: 'Day of Week'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      day_of_week: day_of_week
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

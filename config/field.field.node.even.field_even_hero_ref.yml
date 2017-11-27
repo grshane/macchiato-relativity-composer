@@ -1,0 +1,28 @@
+uuid: 221c792e-ce47-43f8-a11d-dd4632251147
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_even_hero_ref
+    - node.type.even
+    - node.type.hero
+id: node.even.field_even_hero_ref
+field_name: field_even_hero_ref
+entity_type: node
+bundle: even
+label: Hero
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      hero: hero
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

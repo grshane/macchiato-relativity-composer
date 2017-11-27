@@ -1,0 +1,26 @@
+uuid: bdf90cbd-f81f-4f31-b6e6-977d63e6ba2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.prec.field_prec_atte_ref
+    - node.type.prec
+  module:
+    - user
+id: node.prec.default
+targetEntityType: node
+bundle: prec
+mode: default
+content:
+  field_prec_atte_ref:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

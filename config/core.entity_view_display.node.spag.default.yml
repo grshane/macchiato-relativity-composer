@@ -1,0 +1,28 @@
+uuid: 588e0952-67e7-41ba-a35f-f623534da95e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.spag.field_spag_body
+    - node.type.spag
+  module:
+    - text
+    - user
+id: node.spag.default
+targetEntityType: node
+bundle: spag
+mode: default
+content:
+  field_spag_body:
+    weight: 101
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
