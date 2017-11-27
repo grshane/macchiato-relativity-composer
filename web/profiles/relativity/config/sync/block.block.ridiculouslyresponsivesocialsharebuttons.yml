@@ -1,0 +1,28 @@
+uuid: 19d2e946-45fa-4cd6-ac14-ced992a89f97
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.event_node_path
+  module:
+    - block_visibility_groups
+    - rrssb
+  theme:
+    - fldrupalcamp2018
+id: ridiculouslyresponsivesocialsharebuttons
+theme: fldrupalcamp2018
+region: content
+weight: -4
+provider: null
+plugin: rrssb_block
+settings:
+  id: rrssb_block
+  label: 'Share this content.'
+  provider: rrssb
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: event_node_path
+    context_mapping: {  }

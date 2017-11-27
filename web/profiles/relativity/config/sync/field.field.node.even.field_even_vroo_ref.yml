@@ -1,0 +1,28 @@
+uuid: 60d877ca-b18f-4c1c-8590-27f5f8ec76cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_even_vroo_ref
+    - node.type.even
+    - node.type.vroo
+id: node.even.field_even_vroo_ref
+field_name: field_even_vroo_ref
+entity_type: node
+bundle: even
+label: 'Venue Room'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vroo: vroo
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

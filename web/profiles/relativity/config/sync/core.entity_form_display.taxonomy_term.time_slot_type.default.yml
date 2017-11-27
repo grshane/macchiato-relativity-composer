@@ -1,0 +1,22 @@
+uuid: 99a8c48f-8d8b-4297-9945-92e98f8915e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.time_slot_type
+id: taxonomy_term.time_slot_type.default
+targetEntityType: taxonomy_term
+bundle: time_slot_type
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

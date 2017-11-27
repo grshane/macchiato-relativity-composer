@@ -1,0 +1,82 @@
+uuid: ce287646-a6cb-46e1-b0a2-9804299fddac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sitm.field_sitm_prec_ref
+    - field.field.node.sitm.field_sitm_public_title
+    - field.field.node.sitm.field_sitm_sess_ref
+    - field.field.node.sitm.field_sitm_time_slot_type_ref
+    - field.field.node.sitm.field_sitm_tslo_ref
+    - field.field.node.sitm.field_sitm_vroo_ref
+    - node.type.sitm
+  module:
+    - entity_reference_views_select
+    - inline_entity_form
+id: node.sitm.default
+targetEntityType: node
+bundle: sitm
+mode: default
+content:
+  field_sitm_prec_ref:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_sitm_public_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sitm_sess_ref:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_sitm_time_slot_type_ref:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_sitm_tslo_ref:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: erviews_options_select
+    region: content
+  field_sitm_vroo_ref:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: erviews_options_select
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  publish_on: true
+  status: true
+  sticky: true
+  uid: true
+  unpublish_on: true

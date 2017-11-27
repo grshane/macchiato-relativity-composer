@@ -1,0 +1,17 @@
+uuid: 2639e134-66dd-462e-8cda-d5f6689315d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.atte
+  module:
+    - user
+id: node.atte.default
+targetEntityType: node
+bundle: atte
+mode: default
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,58 @@
+uuid: 2c0eb991-6d77-4e85-ad8d-50cc883a171c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sess.field_sess_audience_ref
+    - field.field.node.sess.field_sess_body
+    - field.field.node.sess.field_sess_docu_ref
+    - field.field.node.sess.field_sess_even_ref
+    - field.field.node.sess.field_sess_track_ref
+    - node.type.sess
+  module:
+    - text
+    - user
+id: node.sess.default
+targetEntityType: node
+bundle: sess
+mode: default
+content:
+  field_sess_audience_ref:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_sess_body:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_sess_docu_ref:
+    type: entity_reference_entity_view
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link: false
+      view_mode: default
+    third_party_settings: {  }
+  field_sess_track_ref:
+    weight: 2
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_sess_even_ref: true

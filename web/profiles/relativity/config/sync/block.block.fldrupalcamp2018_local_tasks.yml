@@ -1,0 +1,37 @@
+uuid: 817e21f7-80c8-4c0d-b206-22d0844da4b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - user
+  theme:
+    - fldrupalcamp2018
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: fldrupalcamp2018_local_tasks
+theme: fldrupalcamp2018
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,0 +1,14 @@
+uuid: 79bb418f-6ad8-4359-9a57-825a4ae9e3e8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - jeppy64@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

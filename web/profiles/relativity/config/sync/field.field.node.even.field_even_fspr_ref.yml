@@ -1,0 +1,28 @@
+uuid: 77ec587a-6129-43aa-8f6b-96ede4a43802
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_even_fspr_ref
+    - node.type.even
+    - node.type.fspe
+id: node.even.field_even_fspr_ref
+field_name: field_even_fspr_ref
+entity_type: node
+bundle: even
+label: 'Featured Speaker'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      fspe: fspe
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

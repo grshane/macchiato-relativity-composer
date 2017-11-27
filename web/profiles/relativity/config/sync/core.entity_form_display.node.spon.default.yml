@@ -1,0 +1,59 @@
+uuid: fdf72e36-8752-4c13-b23d-334830715856
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.spon.field_spon_headline
+    - field.field.node.spon.field_spon_link
+    - field.field.node.spon.field_spon_logo
+    - image.style.thumbnail
+    - node.type.spon
+  module:
+    - image
+    - link
+id: node.spon.default
+targetEntityType: node
+bundle: spon
+mode: default
+content:
+  field_spon_headline:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_spon_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_spon_logo:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  publish_on: true
+  status: true
+  sticky: true
+  uid: true
+  unpublish_on: true

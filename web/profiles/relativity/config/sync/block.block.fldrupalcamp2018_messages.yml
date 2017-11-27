@@ -1,0 +1,22 @@
+uuid: 16aa3dc3-c8ed-4bb2-bb6e-30f6d29f16b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fldrupalcamp2018
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: fldrupalcamp2018_messages
+theme: fldrupalcamp2018
+region: pre_content
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

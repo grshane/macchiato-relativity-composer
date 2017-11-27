@@ -1,0 +1,126 @@
+uuid: b29caf29-f867-42aa-9b0f-813ab29f5312
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.venu.field_venu_body
+    - field.field.node.venu.field_venu_hero_ref
+    - field.field.node.venu.field_venu_map_string
+    - node.type.venu
+  module:
+    - field_group
+    - inline_entity_form
+    - text
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - group_location
+        - group_hero
+        - group_rooms
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper
+    group_location:
+      children:
+        - field_venu_map_string
+        - field_venu_body
+      parent_name: group_wrapper
+      weight: 5
+      format_type: tab
+      format_settings:
+        label: 'Text and Location'
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Text and Location'
+    group_hero:
+      children:
+        - field_venu_hero_ref
+      parent_name: group_wrapper
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Hero
+    group_rooms:
+      children:
+        - field_venu_vroo_ref
+      parent_name: group_wrapper
+      weight: 7
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Rooms
+id: node.venu.default
+targetEntityType: node
+bundle: venu
+mode: default
+content:
+  field_venu_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_venu_hero_ref:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_venu_map_string:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true

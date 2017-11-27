@@ -1,0 +1,42 @@
+uuid: 2a9c0df7-59e6-4250-aed6-bdbb355f4208
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vroo.field_vroo_max_capacity
+    - node.type.vroo
+id: node.vroo.default
+targetEntityType: node
+bundle: vroo
+mode: default
+content:
+  field_vroo_max_capacity:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true

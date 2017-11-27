@@ -1,0 +1,19 @@
+uuid: 612ed70a-7522-4420-9ec3-a50810852d0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_even_eblo_ref
+field_name: field_even_eblo_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

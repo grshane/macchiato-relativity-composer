@@ -1,0 +1,8 @@
+uuid: be671932-37cd-41d2-9be1-ae962ca16062
+langcode: en
+status: true
+dependencies: {  }
+id: relativity_short_month
+label: 'Relativity Short Month'
+locked: false
+pattern: M

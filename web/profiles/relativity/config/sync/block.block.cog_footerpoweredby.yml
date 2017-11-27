@@ -1,0 +1,31 @@
+uuid: 6a5a4c92-ee29-41fd-87de-4ccd880d6f0a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3935f763-e46e-482f-81de-412f31f521c2'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - cog
+id: cog_footerpoweredby
+theme: cog
+region: branding
+weight: 0
+provider: null
+plugin: 'block_content:3935f763-e46e-482f-81de-412f31f521c2'
+settings:
+  id: 'block_content:3935f763-e46e-482f-81de-412f31f521c2'
+  label: 'Footer: Powered by'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

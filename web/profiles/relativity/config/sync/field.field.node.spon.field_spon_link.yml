@@ -1,0 +1,23 @@
+uuid: 19f2e127-a29d-4e6d-a209-af4791e523c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spon_link
+    - node.type.spon
+  module:
+    - link
+id: node.spon.field_spon_link
+field_name: field_spon_link
+entity_type: node
+bundle: spon
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

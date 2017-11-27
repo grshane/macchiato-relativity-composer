@@ -1,0 +1,22 @@
+uuid: 70326348-3e29-4241-80a5-70c3639c0be7
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - fldrupalcamp2018
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: fldrupalcamp2018_help
+theme: fldrupalcamp2018
+region: branding
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

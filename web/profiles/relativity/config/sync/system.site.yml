@@ -1,0 +1,15 @@
+uuid: 7b8c281a-59f2-48cf-a9cf-647bdfd68ed7
+name: 'Florida DrupalCamp'
+mail: jeppy64@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/7
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+mail_notification: ''

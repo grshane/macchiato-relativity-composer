@@ -1,0 +1,31 @@
+uuid: 8e6d704f-7656-4e9a-bf64-69f861d492aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front_page_path
+    - views.view.events
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - bartik
+id: views_block__events_block_1
+theme: bartik
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'views_block:events-block_1'
+settings:
+  id: 'views_block:events-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front_page_path
+    context_mapping: {  }

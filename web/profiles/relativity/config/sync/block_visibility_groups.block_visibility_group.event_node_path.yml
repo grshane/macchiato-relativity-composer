@@ -1,0 +1,19 @@
+uuid: aec1220e-afa0-47e5-b6ec-ed1bc0ccc89e
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: event_node_path
+label: 'Event Node Path'
+logic: and
+conditions:
+  75449d3a-d6dc-41b4-a58c-d724050b137f:
+    id: 'entity_bundle:node'
+    bundles:
+      even: even
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 75449d3a-d6dc-41b4-a58c-d724050b137f
+allow_other_conditions: false

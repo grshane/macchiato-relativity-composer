@@ -1,0 +1,45 @@
+uuid: 5205922e-7e9a-4488-9445-657681611c20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.eblo.field_eblo_body
+    - node.type.eblo
+  module:
+    - text
+id: node.eblo.default
+targetEntityType: node
+bundle: eblo
+mode: default
+content:
+  field_eblo_body:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true

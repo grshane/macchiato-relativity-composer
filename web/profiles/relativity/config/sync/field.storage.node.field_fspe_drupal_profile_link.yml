@@ -1,0 +1,19 @@
+uuid: 3f4455a8-0f96-4685-ba3f-c04cdf429125
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_fspe_drupal_profile_link
+field_name: field_fspe_drupal_profile_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,79 @@
+uuid: 41ed79d0-3d56-45b9-b7bc-66188ebdbf25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.eday.field_eday_date
+    - field.field.node.eday.field_eday_end_hour
+    - field.field.node.eday.field_eday_end_meridiem
+    - field.field.node.eday.field_eday_end_minute
+    - field.field.node.eday.field_eday_start_hour
+    - field.field.node.eday.field_eday_start_meridiem
+    - field.field.node.eday.field_eday_start_minute
+    - node.type.eday
+  module:
+    - datetime
+id: node.eday.default
+targetEntityType: node
+bundle: eday
+mode: default
+content:
+  field_eday_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_eday_end_hour:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_eday_end_meridiem:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_eday_end_minute:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_eday_start_hour:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_eday_start_meridiem:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_eday_start_minute:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  publish_on: true
+  status: true
+  sticky: true
+  uid: true
+  unpublish_on: true

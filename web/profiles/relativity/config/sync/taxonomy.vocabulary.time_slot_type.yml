@@ -1,0 +1,9 @@
+uuid: 96f8381e-8be2-440d-beff-6ec961e97430
+langcode: en
+status: true
+dependencies: {  }
+name: 'Time Slot Type'
+vid: time_slot_type
+description: ''
+hierarchy: 0
+weight: 0

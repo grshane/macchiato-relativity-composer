@@ -1,0 +1,18 @@
+uuid: d68c5869-ed8a-43c3-a93c-1a966030b83c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.atte
+  module:
+    - user
+id: node.atte.teaser
+targetEntityType: node
+bundle: atte
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

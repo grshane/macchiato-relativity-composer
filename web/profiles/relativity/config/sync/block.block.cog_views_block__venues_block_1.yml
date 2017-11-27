@@ -1,0 +1,32 @@
+uuid: 47e561a0-4a38-4a0a-b76d-1d0e94c0ea2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.event_node_path
+    - views.view.venues
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - cog
+id: cog_views_block__venues_block_1
+theme: cog
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:venues-block_1'
+settings:
+  id: 'views_block:venues-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: event_node_path
+    context_mapping: {  }

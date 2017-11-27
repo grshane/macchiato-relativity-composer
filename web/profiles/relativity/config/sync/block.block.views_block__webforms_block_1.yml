@@ -1,0 +1,31 @@
+uuid: f51c1a90-ff47-4c90-a1ba-552ce4a38cd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.event_node_path
+    - views.view.webforms
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - bartik
+id: views_block__webforms_block_1
+theme: bartik
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:webforms-block_1'
+settings:
+  id: 'views_block:webforms-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: event_node_path
+    context_mapping: {  }

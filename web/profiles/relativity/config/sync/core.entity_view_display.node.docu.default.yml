@@ -1,0 +1,23 @@
+uuid: 72d8af16-d228-42bb-8db1-befe43f62b9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.docu.field_docu_description
+    - field.field.node.docu.field_docu_file
+    - node.type.docu
+  module:
+    - user
+id: node.docu.default
+targetEntityType: node
+bundle: docu
+mode: default
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_docu_description: true
+  field_docu_file: true

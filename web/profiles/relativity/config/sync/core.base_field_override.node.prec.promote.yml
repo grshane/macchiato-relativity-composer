@@ -1,0 +1,22 @@
+uuid: 9cb8205a-37fd-495f-be52-01885bfa4c95
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.prec
+id: node.prec.promote
+field_name: promote
+entity_type: node
+bundle: prec
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

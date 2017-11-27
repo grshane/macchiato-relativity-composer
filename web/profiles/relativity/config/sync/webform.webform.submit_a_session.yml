@@ -1,0 +1,119 @@
+uuid: 1ca13ff4-a631-451f-b52f-bb0b42a32ac7
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: submit_a_session
+title: 'Submit a Session for FLDC2018'
+description: ''
+category: ''
+elements: "about_you:\n  '#type': fieldset\n  '#title': 'About You'\n  '#required': true\n  first_name:\n    '#type': textfield\n    '#title': 'First Name'\n    '#required': true\n  last_name:\n    '#type': textfield\n    '#title': 'Last Name'\n    '#required': true\n  work_title:\n    '#type': textfield\n    '#title': 'Work Title'\n    '#required': true\n  email:\n    '#type': email\n    '#title': Email\n    '#required': true\n  phone:\n    '#type': tel\n    '#title': Phone\nabout_your_session:\n  '#type': fieldset\n  '#title': 'About Your Session'\n  '#required': true\n  proposer_presents_sess:\n    '#type': radios\n    '#title': 'Will you be presenting this session?'\n    '#options':\n      'Yes': 'Yes I will present'\n      'No': 'No someone else will present '\n    '#required': true\n  presenter_eventbrite_username:\n    '#type': textfield\n    '#title': 'Your EventBrite UserName for this event'\n    '#states':\n      visible:\n        ':input[name=\"proposer_presents_sess\"]':\n          value: 'Yes'\n  session_title:\n    '#type': textfield\n    '#title': 'Session Title'\n    '#required': true\n  audience:\n    '#type': webform_term_select\n    '#title': Audience\n    '#vocabulary': audience\n    '#breadcrumb_delimiter': ''\n  track:\n    '#type': webform_term_select\n    '#title': Track\n    '#vocabulary': track\n    '#breadcrumb_delimiter': ''\n    '#required': true\n  slide_deck:\n    '#type': webform_document_file\n    '#title': 'Slide Deck'\n    '#file_extensions': pdf\n  description:\n    '#type': textarea\n    '#title': Description\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: true
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: true
+  form_disable_back: false
+  form_autofocus: true
+  form_details_toggle: false
+  submission_label: ''
+  submission_log: false
+  submission_user_columns: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  purge: none
+  purge_days: null
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+  wizard_comfirmation: true
+  wizard_comfirmation_label: ''
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }

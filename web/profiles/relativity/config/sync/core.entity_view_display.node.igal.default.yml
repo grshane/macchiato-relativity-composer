@@ -1,0 +1,37 @@
+uuid: aca9db8f-6087-480e-bb6d-cc265d9fc561
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.igal.field_igal_image
+    - field.field.node.igal.field_igal_teaser
+    - node.type.igal
+  module:
+    - image
+    - user
+id: node.igal.default
+targetEntityType: node
+bundle: igal
+mode: default
+content:
+  field_igal_image:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_igal_teaser:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

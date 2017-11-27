@@ -1,0 +1,19 @@
+uuid: 40d4f6f9-8786-4788-bfc2-ef4a69f4fd2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_igal_teaser
+    - node.type.igal
+id: node.igal.field_igal_teaser
+field_name: field_igal_teaser
+entity_type: node
+bundle: igal
+label: Teaser
+description: '400 characters maximum.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

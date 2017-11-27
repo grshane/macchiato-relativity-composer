@@ -1,0 +1,44 @@
+uuid: 6062cafe-49d3-4456-8dfd-daddaab1a171
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.prec.field_prec_atte_ref
+    - node.type.prec
+id: node.prec.default
+targetEntityType: node
+bundle: prec
+mode: default
+content:
+  field_prec_atte_ref:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true

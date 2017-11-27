@@ -1,0 +1,31 @@
+uuid: cf89259e-8616-438e-8c5c-2a5c96447e07
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.event_node_path
+    - views.view.schedule_items
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - cog
+id: cog_views_block__schedule_items_block_1
+theme: cog
+region: branding
+weight: 0
+provider: null
+plugin: 'views_block:schedule_items-block_1'
+settings:
+  id: 'views_block:schedule_items-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: event_node_path
+    context_mapping: {  }

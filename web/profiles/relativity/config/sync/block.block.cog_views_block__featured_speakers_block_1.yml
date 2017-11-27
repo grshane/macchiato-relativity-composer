@@ -1,0 +1,31 @@
+uuid: f16942a1-ad3d-47c6-b9a7-2fb3e347d877
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.event_node_path
+    - views.view.featured_speakers
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - cog
+id: cog_views_block__featured_speakers_block_1
+theme: cog
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:featured_speakers-block_1'
+settings:
+  id: 'views_block:featured_speakers-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: event_node_path
+    context_mapping: {  }

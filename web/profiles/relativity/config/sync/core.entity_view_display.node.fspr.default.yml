@@ -1,0 +1,21 @@
+uuid: 77e81904-5e89-4ada-9e29-d386c7798e21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fspr.field_fspr_fspe_ref
+    - node.type.fspr
+  module:
+    - user
+id: node.fspr.default
+targetEntityType: node
+bundle: fspr
+mode: default
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_fspr_fspe_ref: true

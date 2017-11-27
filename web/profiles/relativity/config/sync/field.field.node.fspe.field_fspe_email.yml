@@ -1,0 +1,19 @@
+uuid: 9be2edff-ae86-474f-8926-ab4de714449a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fspe_email
+    - node.type.fspe
+id: node.fspe.field_fspe_email
+field_name: field_fspe_email
+entity_type: node
+bundle: fspe
+label: Email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

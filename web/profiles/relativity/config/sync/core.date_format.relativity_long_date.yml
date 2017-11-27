@@ -1,0 +1,8 @@
+uuid: 2eb51800-b9f2-4a9f-b7eb-92b5cd7bdb80
+langcode: en
+status: true
+dependencies: {  }
+id: relativity_long_date
+label: 'Relativity Long Date'
+locked: false
+pattern: 'D - M,j Y'

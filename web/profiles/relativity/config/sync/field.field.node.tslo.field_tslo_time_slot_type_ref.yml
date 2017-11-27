@@ -1,0 +1,29 @@
+uuid: 86086a88-c7e0-46a9-b862-f2fd5846ec47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tslo_time_slot_type_ref
+    - node.type.tslo
+    - taxonomy.vocabulary.time_slot_type
+id: node.tslo.field_tslo_time_slot_type_ref
+field_name: field_tslo_time_slot_type_ref
+entity_type: node
+bundle: tslo
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      time_slot_type: time_slot_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

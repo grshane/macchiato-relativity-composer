@@ -1,0 +1,22 @@
+uuid: 6f2b3664-f092-4871-b58c-ff0e6d2dd1cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cog
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: cog_help
+theme: cog
+region: branding
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

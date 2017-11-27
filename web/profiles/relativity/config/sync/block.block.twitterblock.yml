@@ -1,0 +1,44 @@
+uuid: be50cf5e-a8d8-48ce-9e06-40cd4bfe9738
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.event_node_path
+  module:
+    - block_visibility_groups
+    - twitter_block
+  theme:
+    - fldrupalcamp2018
+id: twitterblock
+theme: fldrupalcamp2018
+region: footer
+weight: -9
+provider: null
+plugin: twitter_block
+settings:
+  id: twitter_block
+  label: 'Twitter block'
+  provider: twitter_block
+  label_display: visible
+  username: fldrupalcamp
+  theme: ''
+  link_color: ''
+  width: ''
+  height: ''
+  chrome:
+    noheader: '0'
+    nofooter: '0'
+    noborders: '0'
+    noscrollbar: '0'
+    transparent: '0'
+  border_color: ''
+  language: ''
+  tweet_limit: '8'
+  related: ''
+  polite: polite
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: event_node_path
+    context_mapping: {  }

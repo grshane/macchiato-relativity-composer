@@ -1,0 +1,190 @@
+uuid: 94c58bbd-b9f0-4596-a076-cbf585f60d60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fspe.field_fspe_company_link
+    - field.field.node.fspe.field_fspe_company_name
+    - field.field.node.fspe.field_fspe_drupal_profile_link
+    - field.field.node.fspe.field_fspe_email
+    - field.field.node.fspe.field_fspe_first_name
+    - field.field.node.fspe.field_fspe_last_name
+    - field.field.node.fspe.field_fspe_portrait
+    - field.field.node.fspe.field_fspe_short_bio
+    - field.field.node.fspe.field_fspe_twitter_profile_link
+    - field.field.node.fspe.field_fspe_work_title
+    - image.style.thumbnail
+    - node.type.fspe
+  module:
+    - field_group
+    - image
+    - link
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - group_identity
+        - group_employment
+        - group_social
+      parent_name: ''
+      weight: 4
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper
+    group_identity:
+      children:
+        - field_fspe_first_name
+        - field_fspe_last_name
+        - field_fspe_email
+        - field_fspe_short_bio
+        - field_fspe_portrait
+      parent_name: group_wrapper
+      weight: 12
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Identity
+    group_employment:
+      children:
+        - field_fspe_work_title
+        - field_fspe_company_name
+        - field_fspe_company_link
+      parent_name: group_wrapper
+      weight: 13
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Employment
+    group_social:
+      children:
+        - field_fspe_drupal_profile_link
+        - field_fspe_twitter_profile_link
+      parent_name: group_wrapper
+      weight: 14
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Social
+id: node.fspe.default
+targetEntityType: node
+bundle: fspe
+mode: default
+content:
+  field_fspe_company_link:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_fspe_company_name:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fspe_drupal_profile_link:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_fspe_email:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_fspe_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fspe_last_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fspe_portrait:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_fspe_short_bio:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fspe_twitter_profile_link:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_fspe_work_title:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 11
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true

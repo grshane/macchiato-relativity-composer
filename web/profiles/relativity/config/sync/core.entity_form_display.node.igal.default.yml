@@ -1,0 +1,55 @@
+uuid: f96e8eb5-4fb9-4dce-adc3-79f1d55bceda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.igal.field_igal_image
+    - field.field.node.igal.field_igal_teaser
+    - image.style.thumbnail
+    - node.type.igal
+  module:
+    - image
+id: node.igal.default
+targetEntityType: node
+bundle: igal
+mode: default
+content:
+  field_igal_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_igal_teaser:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true

@@ -1,0 +1,466 @@
+uuid: f5dbbc2e-7697-4d35-8401-7dcc0610ba5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.even.field_even_body
+    - field.field.node.even.field_even_eblo_ref
+    - field.field.node.even.field_even_eday_ref
+    - field.field.node.even.field_even_espo_ref
+    - field.field.node.even.field_even_event_id_ref
+    - field.field.node.even.field_even_fspr_ref
+    - field.field.node.even.field_even_hero_ref
+    - field.field.node.even.field_even_igal_ref
+    - field.field.node.even.field_even_registration_url
+    - field.field.node.even.field_even_sitm_ref
+    - field.field.node.even.field_even_tslo_ref
+    - field.field.node.even.field_even_venu_ref
+    - field.field.node.even.field_even_vroo_ref
+    - field.field.node.even.field_even_webform_ref
+    - node.type.even
+  module:
+    - field_group
+    - inline_entity_form
+    - link
+    - path
+    - scheduler
+    - text
+    - webform
+third_party_settings:
+  field_group:
+    group_event_setup:
+      children:
+        - group_registration
+        - group_wrapper
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        label: 'Event Setup'
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Event Setup'
+    group_wrapper:
+      children:
+        - group_text
+        - group_blocks
+        - group_date_s_
+        - group_time_slots
+        - group_venue
+        - group_venue_rooms
+        - group_hero
+        - group_webform
+        - group_sponsors
+        - group_featured_speakers
+        - group_image_gallery
+      parent_name: group_event_setup
+      weight: 29
+      format_type: tabs
+      format_settings:
+        label: Wrapper
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: Wrapper
+    group_date_s_:
+      children:
+        - field_even_eday_ref
+      parent_name: group_wrapper
+      weight: 22
+      format_type: tab
+      format_settings:
+        label: Days/Times
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Days/Times
+    group_webform:
+      children:
+        - field_even_webform_ref
+      parent_name: group_wrapper
+      weight: 27
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Webform
+    group_hero:
+      children:
+        - field_even_hero_ref
+      parent_name: group_wrapper
+      weight: 26
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Hero
+    group_venue:
+      children:
+        - field_even_venu_ref
+      parent_name: group_wrapper
+      weight: 24
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Venue
+    group_text:
+      children:
+        - field_even_body
+      parent_name: group_wrapper
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Text
+    group_sponsors:
+      children:
+        - field_even_espo_ref
+      parent_name: group_wrapper
+      weight: 28
+      format_type: tab
+      format_settings:
+        label: 'Event Sponsors'
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Event Sponsors'
+    group_featured_speakers:
+      children:
+        - field_even_fspr_ref
+      parent_name: group_wrapper
+      weight: 29
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Featured Speakers'
+    group_image_gallery:
+      children:
+        - field_even_igal_ref
+      parent_name: group_wrapper
+      weight: 30
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Image Gallery'
+    group_schedule_setup:
+      children:
+        - group_wrapper2
+      parent_name: ''
+      weight: 4
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Schedule Setup'
+    group_wrapper2:
+      children:
+        - group_schedule_item_records
+      parent_name: group_schedule_setup
+      weight: 20
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Wrapper2
+    group_schedule_item_records:
+      children:
+        - field_even_sitm_ref
+      parent_name: group_wrapper2
+      weight: 20
+      format_type: tab
+      format_settings:
+        label: 'Schedule Items'
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Schedule Items'
+    group_time_slots:
+      children:
+        - field_even_tslo_ref
+      parent_name: group_wrapper
+      weight: 23
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Time Slots'
+    group_venue_rooms:
+      children:
+        - field_even_vroo_ref
+      parent_name: group_wrapper
+      weight: 25
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Venue Rooms'
+    group_registration:
+      children:
+        - field_even_registration_url
+      parent_name: group_event_setup
+      weight: 28
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Registration
+    group_blocks:
+      children:
+        - field_even_eblo_ref
+      parent_name: group_wrapper
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Blocks
+id: node.even.default
+targetEntityType: node
+bundle: even
+mode: default
+content:
+  field_even_body:
+    weight: 30
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_even_eblo_ref:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_even_eday_ref:
+    weight: 2
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_even_espo_ref:
+    weight: 31
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_even_event_id_ref:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_even_fspr_ref:
+    weight: 21
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_even_hero_ref:
+    weight: 28
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_even_igal_ref:
+    weight: 33
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_even_registration_url:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_even_sitm_ref:
+    weight: 34
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_even_tslo_ref:
+    weight: 29
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_even_venu_ref:
+    weight: 29
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_even_vroo_ref:
+    weight: 30
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_even_webform_ref:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

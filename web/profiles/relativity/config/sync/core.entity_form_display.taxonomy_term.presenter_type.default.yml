@@ -1,0 +1,22 @@
+uuid: 3aaa46c9-2090-4482-81cc-cfaf8df3ef17
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.presenter_type
+id: taxonomy_term.presenter_type.default
+targetEntityType: taxonomy_term
+bundle: presenter_type
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
