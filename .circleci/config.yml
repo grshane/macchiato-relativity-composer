@@ -104,6 +104,14 @@ jobs:
             - run:
                 name: build assets
                 command: composer -n build-assets
+            
+            - run:
+                name: get frontend assets
+                command: npm install -g gulp gulp-cli
+            
+            - run:
+                name: build theme
+                command: cd web/themes/custom/$THEME_MACHINE_NAME && yarn install && gulp build
 
             - run:
                 name: prepare database for site-under test
