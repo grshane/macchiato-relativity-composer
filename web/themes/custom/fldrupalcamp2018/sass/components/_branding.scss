@@ -1,0 +1,35 @@
+.region-branding {
+  .block-system-menublock ul.menu {
+    @extend .no-ul-list;
+  }
+}
+
+.site-branding-text {
+  font-size: 150%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-left: 0.25em;
+  .site-branding-name {
+    display: flex;
+    align-items: center;
+    color: $blk;
+    a {
+      color: $blk;
+    }
+  }
+}
+// logo values
+div.site-branding {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+    .logo {
+      height: 80px;
+      display: flex;
+      padding: 5px 5px 0;
+      float: left;
+      margin-bottom: 5px;
+    }
+}

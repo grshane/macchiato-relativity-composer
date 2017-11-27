@@ -1,0 +1,90 @@
+// Header Main Menu
+//
+// Header menus styling for main nav
+//
+// Markup: header.twig
+//
+// Style guide: components.header
+
+.mq-header {
+  width: 100%;
+  max-width: none;
+}
+
+#header {
+  background: $white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.region-header {
+  display: flex;
+  justify-content: space-between;
+
+  .menu--main {
+    display: flex;
+    align-items: center;
+
+    .menu {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      align-items: center;
+
+      .menu__item {
+        display: flex;
+        list-style: none;
+        height: 3.625em;
+        padding: 0.5em;
+
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          color: $dark-gray;
+
+          &:hover {
+            text-decoration: none;
+
+            &::before {
+              color: darken($menu-icon, 20%);
+            }
+          }
+
+          &::before {
+            font-family: 'FontAwesome';
+            font-size: 1.2em;
+            color: $menu-icon;
+
+          }
+        }
+      }
+
+      .menu__item--home a {
+
+        &::before {
+          content: "\f05a";
+        }
+      }
+
+      .menu__item--events a {
+
+        &::before {
+          content: "\f073";
+        }
+      }
+      .menu__item--about a {
+
+        &::before {
+          content: "\f0c0";
+        }
+      }
+      .menu__item--more a {
+
+        &::before {
+          content: "\f141";
+        }
+      }
+    }
+  }
+}
