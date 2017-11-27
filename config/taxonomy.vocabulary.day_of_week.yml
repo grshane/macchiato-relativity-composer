@@ -1,9 +1,0 @@
-uuid: 5ddb2c56-9133-4b69-90e2-9fd6d8144220
-langcode: en
-status: true
-dependencies: {  }
-name: 'Day of Week'
-vid: day_of_week
-description: ''
-hierarchy: 0
-weight: 0

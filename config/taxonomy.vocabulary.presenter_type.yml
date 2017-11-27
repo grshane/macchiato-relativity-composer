@@ -1,9 +1,0 @@
-uuid: 8c724852-e58f-4dad-90e6-4067078920ba
-langcode: en
-status: true
-dependencies: {  }
-name: 'Presenter Type'
-vid: presenter_type
-description: ''
-hierarchy: 0
-weight: 0
