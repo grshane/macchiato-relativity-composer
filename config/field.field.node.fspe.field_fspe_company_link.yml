@@ -1,0 +1,23 @@
+uuid: e056eaeb-6c46-4f57-a376-8cd423986f2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fspe_company_link
+    - node.type.fspe
+  module:
+    - link
+id: node.fspe.field_fspe_company_link
+field_name: field_fspe_company_link
+entity_type: node
+bundle: fspe
+label: 'Company Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

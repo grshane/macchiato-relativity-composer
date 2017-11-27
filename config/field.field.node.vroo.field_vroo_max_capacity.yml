@@ -1,0 +1,23 @@
+uuid: 5329e98c-95cd-4f27-adf1-811299fefa27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vroo_max_capacity
+    - node.type.vroo
+id: node.vroo.field_vroo_max_capacity
+field_name: field_vroo_max_capacity
+entity_type: node
+bundle: vroo
+label: 'Max Capacity'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

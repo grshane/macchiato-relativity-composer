@@ -1,0 +1,62 @@
+uuid: c30cbab4-6131-4668-aaab-bb35710d26a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.even.field_even_body
+    - field.field.node.even.field_even_eblo_ref
+    - field.field.node.even.field_even_eday_ref
+    - field.field.node.even.field_even_espo_ref
+    - field.field.node.even.field_even_event_id_ref
+    - field.field.node.even.field_even_fspr_ref
+    - field.field.node.even.field_even_hero_ref
+    - field.field.node.even.field_even_igal_ref
+    - field.field.node.even.field_even_registration_url
+    - field.field.node.even.field_even_sitm_ref
+    - field.field.node.even.field_even_tslo_ref
+    - field.field.node.even.field_even_venu_ref
+    - field.field.node.even.field_even_vroo_ref
+    - field.field.node.even.field_even_webform_ref
+    - node.type.even
+  module:
+    - text
+    - user
+    - webform
+id: node.even.default
+targetEntityType: node
+bundle: even
+mode: default
+content:
+  field_even_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_even_webform_ref:
+    type: webform_entity_reference_link
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      label: '[webform:title]'
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_even_eblo_ref: true
+  field_even_eday_ref: true
+  field_even_espo_ref: true
+  field_even_event_id_ref: true
+  field_even_fspr_ref: true
+  field_even_hero_ref: true
+  field_even_igal_ref: true
+  field_even_registration_url: true
+  field_even_sitm_ref: true
+  field_even_tslo_ref: true
+  field_even_venu_ref: true
+  field_even_vroo_ref: true

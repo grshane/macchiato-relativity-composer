@@ -1,0 +1,31 @@
+uuid: 34bda396-52c1-4aaf-86f9-61bfe346d7fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front_page_path
+    - views.view.events
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - cog
+id: cog_views_block__events_block_1
+theme: cog
+region: branding
+weight: 0
+provider: null
+plugin: 'views_block:events-block_1'
+settings:
+  id: 'views_block:events-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front_page_path
+    context_mapping: {  }

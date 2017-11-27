@@ -1,0 +1,19 @@
+uuid: 7ba27912-0d2c-4b12-96d0-55f63db7e1a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_sitm_vroo_ref
+field_name: field_sitm_vroo_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

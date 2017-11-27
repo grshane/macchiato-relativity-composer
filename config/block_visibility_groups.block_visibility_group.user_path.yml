@@ -1,0 +1,17 @@
+uuid: f923aa15-9acb-4f57-addb-8d01109f4058
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: user_path
+label: 'User Path'
+logic: and
+conditions:
+  b2009ed1-8162-4b34-b938-3531c7491c1b:
+    id: request_path
+    pages: '/user*'
+    negate: false
+    context_mapping: {  }
+    uuid: b2009ed1-8162-4b34-b938-3531c7491c1b
+allow_other_conditions: false

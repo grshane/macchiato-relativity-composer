@@ -1,0 +1,23 @@
+uuid: 027f1fc2-8f4d-4589-a336-a484223bece6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.espo.field_espo_spon_ref
+    - field.field.node.espo.field_espo_sponsor_level_ref
+    - node.type.espo
+  module:
+    - user
+id: node.espo.default
+targetEntityType: node
+bundle: espo
+mode: default
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_espo_spon_ref: true
+  field_espo_sponsor_level_ref: true

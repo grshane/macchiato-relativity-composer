@@ -1,0 +1,119 @@
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: become_a_sponsor
+title: 'Become a Sponsor for FLDC2018'
+description: ''
+category: ''
+elements: "sponsorship_opportunities_header:\n  '#type': webform_markup\n  '#markup': \"<h2>Fast Facts</h2>\\nEstimated Attendance:&nbsp;300 techies with vast interest in Drupal ranging from newbies to seasoned professionals.\\n\\n<h2>Program Plan</h2>\\n\\n<ul>\\n\\t<li>Friday - full-day paid trainings, code sprint</li>\\n\\t<li>Saturday - full-day 5-6 simultaneous tracks of sessions</li>\\n\\t<li>Sunday - half-day 5-6 simultaneous tracks of sessions</li>\\n</ul>\\nRegistration Fee:&nbsp;$25 (early-bird), $35 (normal)\\n\\n<h3>Platinum Sponsorship</h3>\\n\\n<ul>\\n\\t<li>Prime logo placement on every page of the Florida DrupalCamp web site</li>\\n\\t<li>Table in registration area</li>\\n\\t<li>5-minute block during one of the featured sessions to introduce your company</li>\\n\\t<li>1 sponsor-labeled session during the event to present a Drupal-related topic relating to your company</li>\\n\\t<li>Copy of non-opted-out attendee names, companies and email addresses</li>\\n\\t<li>Three text ad placements in attendee emails sent out prior to the event by FLDC volunteers</li>\\n\\t<li>Naming rights to one of the event rooms</li>\\n\\t<li>Option to place advertising materials in attendee swag bag</li>\\n\\t<li>Exposure on @fldrupalcamp twitter feed</li>\\n\\t<li>Exposure in any press releases</li>\\n\\t<li>Camp admission for 5 people</li>\\n\\t<li>Limited to 1&nbsp;sponsor</li>\\n</ul>\\n\\n<h3>Gold Sponsorship</h3>\\n\\n<ul>\\n\\t<li>Logo placement on every page of the Florida DrupalCamp web site</li>\\n\\t<li>Table in registration area</li>\\n\\t<li>Your company&#39;s logo on a slide by itself introduced during one of the featured sessions</li>\\n\\t<li>1 sponsor-labeled session during the event to present a Drupal-related topic relating to your company</li>\\n\\t<li>Copy of non-opted-out attendee names, companies and email addresses</li>\\n\\t<li>Two&nbsp;text ad placements in attendee emails sent out prior to the event by FLDC volunteers</li>\\n\\t<li>Naming rights to one of the event rooms</li>\\n\\t<li>Option to place advertising materials in attendee swag bag</li>\\n\\t<li>Exposure on @fldrupalcamp twitter feed</li>\\n\\t<li>Exposure in any press releases</li>\\n\\t<li>Camp admission for 2 people</li>\\n</ul>\\n\\n<h3>Silver Sponsorship</h3>\\n\\n<ul>\\n\\t<li>Logo placement on home and sponsors pages on the Florida DrupalCamp web site</li>\\n\\t<li>Table in registration area</li>\\n\\t<li>Your company&#39;s logo on a shared slide during one of the featured sessions</li>\\n\\t<li>1 sponsor-labeled session during the event to present a Drupal-related topic relating to your company</li>\\n\\t<li>One text ad placement in attendee emails sent out prior to the event by FLDC volunteers</li>\\n\\t<li>Option to place advertising materials in attendee swag bag</li>\\n\\t<li>Camp admission for 1 person</li>\\n</ul>\\n\\n<h3>Bronze Sponsorship</h3>\\n\\n<ul>\\n\\t<li>Logo placement on home and sponsors pages on the Florida DrupalCamp web site</li>\\n\\t<li>Your company&#39;s logo on a shared slide during one of the featured sessions</li>\\n\\t<li>Option to place advertising materials in attendee swag bag</li>\\n</ul>\\n\\n<h3>Individual Sponsorship</h3>\\n\\n<ul>\\n\\t<li>Your name on sponsors page on the Florida DrupalCamp web site</li>\\n\\t<li>Your name on a shared slide during the opening session</li>\\n</ul>\\n\\n<h3>In-Kind Sponsorship</h3>\\nMinimum of $500 in In-Kind Services/Goods\\n\\n<ul>\\n\\t<li>Logo placement on home and sponsors pages on the Florida DrupalCamp web site</li>\\n\\t<li>Your company&#39;s logo on a shared slide during one of the featured sessions</li>\\n\\t<li>Option to place advertising materials in attendee swag bag</li>\\n\\t<li>Exposure on @fldrupalcamp twitter feed</li>\\n\\t<li>Camp admission for 1 person</li>\\n</ul>\\n<br />\\n&nbsp;\"\ncompany_or_individual:\n  '#type': radios\n  '#title': 'Are you sponsoring as a company or as an individual?'\n  '#options':\n    company: 'My Company is sponsoring'\n    individual: 'I am sponsoring'\ncompany:\n  '#type': fieldset\n  '#title': Company\n  '#states':\n    visible:\n      ':input[name=\"company_or_individual\"]':\n        value: company\n  company_name:\n    '#type': textfield\n    '#title': 'Company Name'\n  first_name:\n    '#type': textfield\n    '#title': 'First Name'\n  last_name:\n    '#type': textfield\n    '#title': 'Last Name'\n  email:\n    '#type': email\n    '#title': Email\n  level_request:\n    '#type': webform_term_select\n    '#title': 'Level Request'\n    '#vocabulary': sponsor_level\n    '#breadcrumb_delimiter': ''\n  logo:\n    '#type': webform_image_file\n    '#title': Logo\n  company_headline:\n    '#type': textfield\n    '#title': 'Company Headline'\n    '#maxlength': '400'\nindividual_attendee:\n  '#type': fieldset\n  '#title': 'Individual Attendee'\n  '#states':\n    visible:\n      ':input[name=\"company_or_individual\"]':\n        value: individual\n  indiv_first_name:\n    '#type': textfield\n    '#title': 'First Name'\n  indiv_last_name:\n    '#type': textfield\n    '#title': 'Last Name'\n  indiv_email:\n    '#type': email\n    '#title': Email\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  submission_label: ''
+  submission_log: false
+  submission_user_columns: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  purge: none
+  purge_days: null
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+  wizard_comfirmation: true
+  wizard_comfirmation_label: ''
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+uuid: 044e6617-d54f-4b2e-a708-a6763db59d6a

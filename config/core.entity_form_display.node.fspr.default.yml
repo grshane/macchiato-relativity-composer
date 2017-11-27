@@ -1,0 +1,50 @@
+uuid: 441d40d7-d432-47ec-9aae-78b9f2c66f96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fspr.field_fspr_fspe_ref
+    - node.type.fspr
+  module:
+    - inline_entity_form
+id: node.fspr.default
+targetEntityType: node
+bundle: fspr
+mode: default
+content:
+  field_fspr_fspe_ref:
+    weight: 1
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  publish_on: true
+  sticky: true
+  uid: true
+  unpublish_on: true

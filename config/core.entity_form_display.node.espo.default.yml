@@ -1,0 +1,42 @@
+uuid: 72a0bb9c-ba43-4ff3-83cd-f5139139682c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.espo.field_espo_spon_ref
+    - field.field.node.espo.field_espo_sponsor_level_ref
+    - node.type.espo
+id: node.espo.default
+targetEntityType: node
+bundle: espo
+mode: default
+content:
+  field_espo_spon_ref:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_espo_sponsor_level_ref:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  publish_on: true
+  status: true
+  sticky: true
+  uid: true
+  unpublish_on: true

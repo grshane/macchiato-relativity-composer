@@ -1,0 +1,25 @@
+uuid: fe3b66c7-244f-4a05-b814-9ed1d5b1923a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sitm_vroo_ref
+    - node.type.sitm
+id: node.sitm.field_sitm_vroo_ref
+field_name: field_sitm_vroo_ref
+entity_type: node
+bundle: sitm
+label: 'Venue Room'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: venue_rooms
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,26 @@
+uuid: d300d439-87d3-4b7f-994b-97d60c25f8ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.eblo.field_eblo_body
+    - node.type.eblo
+  module:
+    - text
+    - user
+id: node.eblo.default
+targetEntityType: node
+bundle: eblo
+mode: default
+content:
+  field_eblo_body:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

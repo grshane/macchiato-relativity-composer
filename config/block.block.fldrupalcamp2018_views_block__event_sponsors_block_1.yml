@@ -1,0 +1,32 @@
+uuid: ba129320-2ca9-4fc2-a82c-7aba159a267f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.event_node_path
+    - views.view.event_sponsors
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - fldrupalcamp2018
+id: fldrupalcamp2018_views_block__event_sponsors_block_1
+theme: fldrupalcamp2018
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:event_sponsors-block_1'
+settings:
+  id: 'views_block:event_sponsors-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: event_node_path
+    context_mapping: {  }

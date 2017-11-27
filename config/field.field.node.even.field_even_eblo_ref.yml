@@ -1,0 +1,28 @@
+uuid: 2b5ab042-8f39-4a26-8c9b-7bb85614961c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_even_eblo_ref
+    - node.type.eblo
+    - node.type.even
+id: node.even.field_even_eblo_ref
+field_name: field_even_eblo_ref
+entity_type: node
+bundle: even
+label: 'Event Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      eblo: eblo
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

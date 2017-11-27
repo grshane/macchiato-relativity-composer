@@ -1,0 +1,17 @@
+uuid: 9ec7c742-c31e-42c5-8f1c-a0910e3d0fc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: events_landing_path
+label: 'Events Landing Path'
+logic: and
+conditions:
+  47045861-41fc-4faf-ac87-55ddac49d7f0:
+    id: request_path
+    pages: /events
+    negate: false
+    context_mapping: {  }
+    uuid: 47045861-41fc-4faf-ac87-55ddac49d7f0
+allow_other_conditions: false

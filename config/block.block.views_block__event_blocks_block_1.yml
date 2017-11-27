@@ -1,0 +1,32 @@
+uuid: 2282763a-1bd1-4c5c-8cae-cdc0b413268e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.event_node_path
+    - views.view.event_blocks
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - fldrupalcamp2018
+id: views_block__event_blocks_block_1
+theme: fldrupalcamp2018
+region: post_content
+weight: -10
+provider: null
+plugin: 'views_block:event_blocks-block_1'
+settings:
+  id: 'views_block:event_blocks-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: event_node_path
+    context_mapping: {  }

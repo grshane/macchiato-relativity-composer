@@ -1,7 +1,10 @@
-uuid: 9d3a8988-9964-4c2b-8004-635c7207616c
+uuid: 838ffb93-9b9e-42ca-8d17-da5354066f64
 langcode: en
 status: true
 dependencies:
+  module:
+    - block_visibility_groups
+    - user
   theme:
     - bartik
 _core:
@@ -9,7 +12,7 @@ _core:
 id: bartik_local_tasks
 theme: bartik
 region: content
-weight: -40
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:
@@ -19,4 +22,16 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

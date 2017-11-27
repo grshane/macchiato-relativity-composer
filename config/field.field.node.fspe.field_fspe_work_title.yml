@@ -1,0 +1,19 @@
+uuid: a234a0f6-88a9-4728-9459-8b9f6b3d0bc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fspe_work_title
+    - node.type.fspe
+id: node.fspe.field_fspe_work_title
+field_name: field_fspe_work_title
+entity_type: node
+bundle: fspe
+label: 'Work Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

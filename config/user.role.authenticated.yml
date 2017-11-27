@@ -1,4 +1,4 @@
-uuid: 813976c3-f925-4e71-87a7-bf6766dd252f
+uuid: 9f05f35f-339f-4544-b072-3061e460c3fe
 langcode: en
 status: true
 dependencies: {  }
@@ -17,3 +17,5 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view any webform submission'
+  - 'view webform submissions any node'

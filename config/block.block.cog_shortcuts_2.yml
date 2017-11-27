@@ -1,0 +1,26 @@
+uuid: a3c0dcda-2190-49e9-a62c-1626a6827b16
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - shortcut
+  theme:
+    - cog
+id: cog_shortcuts_2
+theme: cog
+region: header
+weight: 0
+provider: null
+plugin: shortcuts
+settings:
+  id: shortcuts
+  label: Shortcuts
+  provider: shortcut
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

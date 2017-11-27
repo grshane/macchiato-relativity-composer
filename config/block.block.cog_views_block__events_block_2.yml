@@ -1,0 +1,31 @@
+uuid: ad098d40-d655-4b1d-9cec-59a9c12fedca
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.events_landing_path
+    - views.view.events
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - cog
+id: cog_views_block__events_block_2
+theme: cog
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:events-block_2'
+settings:
+  id: 'views_block:events-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: events_landing_path
+    context_mapping: {  }

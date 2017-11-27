@@ -1,0 +1,32 @@
+uuid: cb756882-d426-4a1e-86f0-1554d723b374
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.event_node_path
+    - views.view.event_registration
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - fldrupalcamp2018
+id: views_block__event_registration_block_1
+theme: fldrupalcamp2018
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:event_registration-block_1'
+settings:
+  id: 'views_block:event_registration-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: event_node_path
+    context_mapping: {  }

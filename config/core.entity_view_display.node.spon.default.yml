@@ -1,0 +1,25 @@
+uuid: e21a9aa6-5bc9-48a3-a5b7-452bd85bd23d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.spon.field_spon_headline
+    - field.field.node.spon.field_spon_link
+    - field.field.node.spon.field_spon_logo
+    - node.type.spon
+  module:
+    - user
+id: node.spon.default
+targetEntityType: node
+bundle: spon
+mode: default
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_spon_headline: true
+  field_spon_link: true
+  field_spon_logo: true

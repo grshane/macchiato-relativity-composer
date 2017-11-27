@@ -1,0 +1,26 @@
+node_type_even_status: '0'
+node_type_even_pattern: ''
+node_type_even_php: 0
+submit: 'Save configuration'
+form_build_id: form-ezkK4DG9BmL0MJ6vEIuqkf_RFiZwJeWGEDKdmWZn4YU
+form_token: LdV6J_1fozaSXwZxY_6anJ8OJF2PhlVgJKXbe4tANfU
+form_id: auto_entitylabel_settings_form
+op: 'Save configuration'
+node_type_eday_status: '1'
+node_type_eday_pattern: '[node:field_eday_date:date:relativity_short_month] [node:field_eday_date:date:relativity_day_number], [node:field_eday_date:date:html_year]'
+node_type_eday_php: 0
+node_type_tslo_status: '1'
+node_type_tslo_pattern: '[node:field_tslo_day_of_week_ref] - [node:field_tslo_start_hour]:[node:field_tslo_start_minute] [node:field_tslo_start_meridiem] - [node:field_tslo_end_hour]:[node:field_tslo_end_minute] [node:field_tslo_end_meridiem]'
+node_type_tslo_php: 0
+node_type_espo_status: '1'
+node_type_espo_pattern: '[node:field_espo_spon_ref]'
+node_type_espo_php: 0
+node_type_sitm_status: '1'
+node_type_sitm_pattern: '[node:field_sitm_tslo_ref] - [node:field_sitm_public_title]'
+node_type_sitm_php: 0
+node_type_fspe_status: '1'
+node_type_fspe_pattern: '[node:field_fspe_first_name] [node:field_fspe_last_name]'
+node_type_fspe_php: 0
+node_type_prec_status: '1'
+node_type_prec_pattern: 'Presenter(s): [node:field_prec_atte_ref]'
+node_type_prec_php: 0

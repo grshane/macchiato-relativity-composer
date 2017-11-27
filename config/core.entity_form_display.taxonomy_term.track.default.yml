@@ -1,0 +1,22 @@
+uuid: 99cdda60-ea5a-488e-b0cc-dae67e4cc917
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.track
+id: taxonomy_term.track.default
+targetEntityType: taxonomy_term
+bundle: track
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

@@ -1,0 +1,22 @@
+uuid: 1288d4f4-744d-48cd-9f5e-367f8dcaab22
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vroo
+id: node.vroo.promote
+field_name: promote
+entity_type: node
+bundle: vroo
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

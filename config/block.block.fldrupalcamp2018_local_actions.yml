@@ -1,0 +1,20 @@
+uuid: b9a0e47a-7d29-459b-8b32-a2d29b1a556e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fldrupalcamp2018
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: fldrupalcamp2018_local_actions
+theme: fldrupalcamp2018
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

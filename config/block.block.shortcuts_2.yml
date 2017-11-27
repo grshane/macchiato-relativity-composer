@@ -1,0 +1,26 @@
+uuid: 15d9b385-24e9-435d-97de-63a83c0d180b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - shortcut
+  theme:
+    - bartik
+id: shortcuts_2
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: shortcuts
+settings:
+  id: shortcuts
+  label: Shortcuts
+  provider: shortcut
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

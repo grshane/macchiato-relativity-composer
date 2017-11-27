@@ -1,0 +1,31 @@
+uuid: 3032d559-9c23-4aaf-aa76-06b5a4f9e9b5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3935f763-e46e-482f-81de-412f31f521c2'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - fldrupalcamp2018
+id: fldrupalcamp2018_footerpoweredby
+theme: fldrupalcamp2018
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:3935f763-e46e-482f-81de-412f31f521c2'
+settings:
+  id: 'block_content:3935f763-e46e-482f-81de-412f31f521c2'
+  label: 'Footer: Powered by'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

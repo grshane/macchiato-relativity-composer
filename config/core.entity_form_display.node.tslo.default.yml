@@ -1,0 +1,84 @@
+uuid: c58926dd-f12c-4b13-b102-813ffcc14151
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tslo.field_tslo_day_of_week_ref
+    - field.field.node.tslo.field_tslo_end_hour
+    - field.field.node.tslo.field_tslo_end_meridiem
+    - field.field.node.tslo.field_tslo_end_minute
+    - field.field.node.tslo.field_tslo_start_hour
+    - field.field.node.tslo.field_tslo_start_meridiem
+    - field.field.node.tslo.field_tslo_start_minute
+    - field.field.node.tslo.field_tslo_time_slot_type_ref
+    - node.type.tslo
+id: node.tslo.default
+targetEntityType: node
+bundle: tslo
+mode: default
+content:
+  field_tslo_day_of_week_ref:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tslo_end_hour:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tslo_end_meridiem:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tslo_end_minute:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tslo_start_hour:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tslo_start_meridiem:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tslo_start_minute:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tslo_time_slot_type_ref:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  publish_on: true
+  status: true
+  sticky: true
+  uid: true
+  unpublish_on: true

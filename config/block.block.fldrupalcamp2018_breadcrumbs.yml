@@ -1,0 +1,22 @@
+uuid: aad24df8-24fc-48ce-8780-3e2e0d326178
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fldrupalcamp2018
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: fldrupalcamp2018_breadcrumbs
+theme: fldrupalcamp2018
+region: pre_content
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

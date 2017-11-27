@@ -1,0 +1,22 @@
+uuid: 43208210-72f6-4486-a9cc-9af8d5e6f11f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.audience
+id: taxonomy_term.audience.default
+targetEntityType: taxonomy_term
+bundle: audience
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

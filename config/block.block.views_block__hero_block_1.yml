@@ -1,0 +1,31 @@
+uuid: 4f97ec38-a7ae-4058-82fe-d0c806015b9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.event_node_path
+    - views.view.hero
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - fldrupalcamp2018
+id: views_block__hero_block_1
+theme: fldrupalcamp2018
+region: pre_content
+weight: 0
+provider: null
+plugin: 'views_block:hero-block_1'
+settings:
+  id: 'views_block:hero-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: event_node_path
+    context_mapping: {  }
